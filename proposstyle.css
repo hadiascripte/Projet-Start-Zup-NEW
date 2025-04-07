@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* /QUIS SUIS-JE ? */
+:root {
+    --var1: #0a034a;
+    --var2: #085a8c;
+    --var3: #ffb433;
+    --var4: #00deff;
+    --var5: #f2f2f2;
+    --var6: #fe4f2d;
+}
+@font-face {
+    font-family: Mystery Quest;
+    src: url(./fonts/Mystery_Quest/MysteryQuest-Regular.ttf);
+}
+@font-face {
+    font-family: schoolbell;
+    src: url(./fonts/Schoolbell/Schoolbell-Regular.ttf);
+}
+@font-face {
+    font-family: pangolin;
+    src: url(./fonts/Pangolin/Pangolin-Regular.ttf);
+}
+@font-face {
+    font-family: walter-turncoat;
+    src: url(./fonts/Walter_Turncoat/WalterTurncoat-Regular.ttf);
+}
+@font-face {
+    font-family: indie;
+    src: url(/fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+body {
+    color: var(--var1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+}
+
+.liensnav a {
+    text-decoration: none;
+    font-family: walter-turncoat;
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 1vw 2vw;
+    color: #0a034a;
+}
+.liensnav a:hover {
+    color: var(--var4);
+    border-bottom: solid var(--var4);
+    letter-spacing: 1px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+}
+.liensnav a {
+    text-decoration: none;
+    font-family: walter-turncoat;
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 1vw 2vw;
+    color: #0a034a;
+}
+.liensnav a:hover {
+    color: var(--var4);
+    border-bottom: solid var(--var4);
+}
+
+h1 {
+    text-align: center;
+    font-family: Mystery Quest;
+    font-size: 6rem;
+    font-weight: 100;
+    margin: 5vw;
+    color: var(--var5);
+    z-index: 1;
+}
+.propos {
+    margin: auto;
+}
+.mainpropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    background-image: url(/Ressources/apropos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.mainpropos::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+.propos {
+    display: flex;
+    justify-content: center;
+}
+.txtpropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Ressources/capricorn-.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 100px 0;
+    width: 80%;
+    border-radius: 50px;
+    box-shadow: 20px -20px 1px rgb(191, 175, 143);
+    position: relative;
+}
+.txtpropos::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 50px;
+}
+
+.p1left,
+.p2right {
+    text-align: justify;
+    font-family: schoolbell;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--var5);
+    padding: 3vw 4vw;
+    width: 100%;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5vw;
+    background-color: rgb(191, 175, 143);
+    width: 100%;
+}
+.mentions,
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    color: var(--var5);
+}
+.infos,
+.mentions,
+.copyright .copyright p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: indie;
+    font-size: 1rem;
+}
+.mentions a,
+.infos a {
+    color: var(--var1);
+    font-family: pangolin;
+    margin: 5px 0;
+    text-decoration: none;
+}
+.mentions a:hover,
+.infos a:hover {
+    text-decoration: none;
+    color: var(--var2);
+    letter-spacing: 1px;
+}
+footer {
+    color: var(--var2);
+    align-items: center;
+    font-family: pangolin;
+}
+.copyright p,
+.infos p {
+    color: var(--var5);
+    margin: 5px 0;
+    font-family: pangolin;
+}
+#btnwhatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    width: 70px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        flex-direction: column;
+        margin-bottom: 5vw;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .logo img {
+        width: 18vw;
+        height: auto;
+    }
+    .liensnav {
+        margin-top: 10px;
+    }
+    .liensnav {
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .propos {
+        margin: auto;
+    }
+    .txtpropos {
+        flex-direction: column;
+    }
+    footer {
+        display: block;
+    }
+    .mentions,
+    .infos,
+    .copyright {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100vw;
+        padding: 1vw;
+        width: 80vw;
+    }
+    .mentions,
+    .infos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .copyright {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 710px) {
+    header {
+        /* flex-direction: row; */
+        display: none;
+    }
+    .liensnav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .liensnav a {
+    }
+    .mainpropos {
+        height: 50vh;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .txtpropos {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding: 3vw 1vw;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img2,
+    .img1 {
+        display: flex;
+        height: 100%;
+    }
+    .infos,
+    .mentions,
+    .copyright {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 610px) {
+    .copyright {
+        display: block;
+    }
+}
+@media screen and (max-width: 610px) {
+    .copyright {
+        display: block;
+    }
+    #btnwhatsapp {
+        bottom: 10px;
+        right: 5px;
+        width: 60px;
+    }
+}
